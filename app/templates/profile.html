@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+
+{% block main %}
+
+<div id="div1" class="flex-container">
+    <img src="{{ url_for('static', filename='images/avatar.svg') }}" id="profile_image" alt="" width="100" height="100">
+    <p id="info" class="hname">Delroy Robinson </p>
+    <p id="info">@robin</p>
+    <p id="info">Kingston, Jamaica</p>
+    <p id="info">Joined {{Date}}</p>
+</div>
+<div id="bottom">
+<div id="text">
+    <p id="bio">I am a smart and talented young man who loves website design and development.</p>
+    <p id="bio">Contact me if you would like to work together on a new project.</p>
+</div>
+
+
+<div id="grid-container">
+        <p id="count"      class="grid-item">7</p>
+        <p id="count" class="grid-item">100</p>
+        <p id="count" class="grid-item">250</p>
+        <p id="posts"           class="grid-item">Posts</p>
+        <p id="posts"       class="grid-item">Following</p>
+        <p id="posts"       class="grid-item">Followers</p>
+</div>
+
+<button type="button">Follow</button>
+</div>
+{% endblock %}
